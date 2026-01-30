@@ -1,0 +1,12 @@
+---
+all:
+    children:
+        webservers:
+            hosts:
+                server1:
+                    ansible_host: ec2-3-110-207-37.ap-south-1.compute.amazonaws.com
+                    ansible_user: ubuntu
+                    ansible_ssh_private_key_file: /mnt/c/users/prasa/downloads/.ssh/pradeepkey.pem
+                
+
+                

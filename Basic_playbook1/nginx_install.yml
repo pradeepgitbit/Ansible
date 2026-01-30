@@ -1,0 +1,25 @@
+---
+- name: Install Nginx and configure
+  hosts: all
+  become: true
+
+  tasks:
+  - name: printing os version
+    debug:
+      msg: "This OS is os"
+
+  - name: Update apt cache
+    apt:
+      update_cache: yes
+      
+
+  - name: Install nginx
+    apt:
+      name: nginx
+      state: present
+
+  - name: Start and enable nginx service
+    service:
+      name: nginx
+      state: started
+      enabled: true

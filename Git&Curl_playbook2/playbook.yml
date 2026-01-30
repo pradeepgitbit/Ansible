@@ -1,0 +1,33 @@
+---
+- name: install Packages
+  hosts: localhost
+  become: true
+  tasks:
+
+  - name: Update Apt Packages
+    apt:
+      update_cache: yes
+
+  - name: install Packages
+    apt:
+      name:
+      - git
+      - curl
+      state: present
+
+  - name: Get Git version
+    command: git --version
+    register: git_version
+
+
+  - name: Show Git version
+    debug:
+      msg: "Git Version {{git_version.stdout}}"
+
+  - name: Get curl version
+    command: curl --version
+    register: curl_version
+
+  - name: Show Curl Version
+    debug:
+      msg: "Curl Version is {{curl_version.stdout}}"
