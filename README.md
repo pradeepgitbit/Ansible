@@ -1,6 +1,6 @@
 # Ansible-playbooks for configuration management.
 
-## Playbooks for installaion of different packages, like: 
+## Playbooks for installaion of single and multiple packages, like: 
 
 - Nginx,
 - Git,
