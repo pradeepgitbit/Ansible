@@ -7,7 +7,12 @@
 - Curl,
 - Apache ( httpd )
 ---
+
+
+### Creating EC2 instance using YAML file
+- ```create-instance_playbook4```
+
 ### *** Usecase of Loops & Conditions in Ansible ***
-- loops_conditions_playbook.yml
+- ```loops_conditions_playbook5```
 ---
 ### Project: Configuration of lamp_stack on webservers.
